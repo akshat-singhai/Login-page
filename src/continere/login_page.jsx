@@ -39,8 +39,9 @@ const login_page = () => {
     
   }
   return (
-    <div className="container" >
+  <>
       <ToastContainer />
+    <div className="container" >
       <div className="form_area" >
         <p className="title">Login</p>
         <form onSubmit={handleSubmit}>
@@ -61,11 +62,8 @@ const login_page = () => {
           {errors.ConfirmPassword && touched.ConfirmPassword ?(<p className='err'>{errors.ConfirmPassword} </p>): null}
           <div>
             <button className="btn" onClick={handleOnClick}>Login</button>
-            <p>Have an Account? <a className="link" href='/'>Login Here!</a></p><a className="link" href='/'>
-            </a></div> </form><a className="link" href='/'>
-        </a></div><a className="link" href='/'>
-      </a> </div>
-
+            <p> <a className="link" target='blank' href='https://www.linkedin.com/in/akshat-singhai-727bb5302/'>Click Here To Visit My  Linkedin Profile</a></p></div> </form></div></div>
+      </>
   );
 }
 
